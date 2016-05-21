@@ -1,0 +1,495 @@
+.bar.bar-stable {
+border: none;
+background-color: #000;
+background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+color: #fff;
+}
+
+.bar.bar-stable .title {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #fff;
+font-size: 22px;
+margin-left: -50px;
+text-align: center;
+}
+.button-guide{
+	background-color: #f39c12 !important;
+	color:white;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size: 19px
+}
+
+
+
+
+
+
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: mockup-regular;
+    src: url(../fonts/Mockup-Regular.otf);
+}
+.ion-navicon{
+
+	color:white !important;
+}
+.icon-whatsapp:before{
+	content:url('../img/whatsapp.png');
+	color:red;
+}
+.ion-paper-airplane{
+	color:white !important;
+}
+.ion-ios7-arrow-back{
+	color:white !important;
+}
+ion-nav-back-button{
+	color:white !important;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, fieldset, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+.button-guide{
+	background-color: #f39c12 !important;
+	color:white;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size: 19px
+}
+.button-reserve{
+	background-color: #2ecc71 !important;
+	color:white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	}
+.box {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+}
+.box h1 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: -50px;
+        color: red;
+        font-size: 60px;
+        text-align: center;
+        font-weight: bold;
+}
+#slideBoxGalleryContent .scroll {
+	height: 100%;
+}
+#slideBoxGallery{
+	height: 100%;
+}
+.box img{
+	height:100%;
+	width:100%;
+}
+#tabDays > .tabs {
+border: 0px;
+background-color: #3498db;
+color: #444;
+padding-top: 0px;
+}
+.tab-item{
+	opacity: 1;
+}
+.tab-item-active {
+background-color: white !important;
+}
+.tab-item span{
+	color:white;
+		font-size: 19px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+.tab-item-active span{
+	color:#3498db !important;
+		font-size: 19px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+#scrollbar .scroll-bar-indicator {
+position: absolute;
+border-radius: 4px;
+background: rgba(0, 0, 0, 0.3);
+opacity: 0;
+}
+
+.scroll-container{
+	margin:10px;
+	width: 100%;
+}
+.message-from{
+border-radius: 9px 9px 0px 9px;
+background-color: rgb( 221, 238, 249 );
+max-width: 70%;
+margin-left: 27%;
+margin-bottom: 20px;
+float: right;
+clear: both;
+border:none;
+margin-right: 3%;
+min-width:105px;
+
+}
+.message-to
+{
+
+border-radius: 9px 9px 9px 0px;
+background-color: rgb( 242, 229, 230 );
+max-width: 70%;
+margin-left: 3%;
+margin-bottom: 20px;
+border: none;
+float: left;
+clear: both;
+margin-top: 5px;
+min-width:105px;
+}
+.box-booking {
+
+width: 100%;
+min-height: 200px;
+color: #360808;
+}
+#circleG{width:149.33333333333334px}.circleG{background-color:#FFF;float:left;height:32px;margin-left: 8px;margin-right: 8px;width:32px;-moz-animation-name:bounce_circleG;-moz-animation-duration:4.949999999999999s;-moz-animation-iteration-count:infinite;-moz-animation-direction:linear;-moz-border-radius:21px;-webkit-animation-name:bounce_circleG;-webkit-animation-duration:4.949999999999999s;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-webkit-border-radius:21px;-ms-animation-name:bounce_circleG;-ms-animation-duration:4.949999999999999s;-ms-animation-iteration-count:infinite;-ms-animation-direction:linear;-ms-border-radius:21px;-o-animation-name:bounce_circleG;-o-animation-duration:4.949999999999999s;-o-animation-iteration-count:infinite;-o-animation-direction:linear;-o-border-radius:21px;animation-name:bounce_circleG;animation-duration:4.949999999999999s;animation-iteration-count:infinite;animation-direction:linear;border-radius:21px}#circleG_1{-moz-animation-delay:0.9899999999999999s;-webkit-animation-delay:0.9899999999999999s;-ms-animation-delay:0.9899999999999999s;-o-animation-delay:0.9899999999999999s;animation-delay:0.9899999999999999s}#circleG_2{-moz-animation-delay:2.3099999999999996s;-webkit-animation-delay:2.3099999999999996s;-ms-animation-delay:2.3099999999999996s;-o-animation-delay:2.3099999999999996s;animation-delay:2.3099999999999996s}#circleG_3{-moz-animation-delay:2.9699999999999998s;-webkit-animation-delay:2.9699999999999998s;-ms-animation-delay:2.9699999999999998s;-o-animation-delay:2.9699999999999998s;animation-delay:2.9699999999999998s}@-moz-keyframes bounce_circleG{0%{}50%{background-color:#000}100%{}}@-webkit-keyframes bounce_circleG{0%{}50%{background-color:#000}100%{}}@-ms-keyframes bounce_circleG{0%{}50%{background-color:#000}100%{}}@-o-keyframes bounce_circleG{0%{}50%{background-color:#000}100%{}}@keyframes bounce_circleG{0%{}50%{background-color:#000}100%{}}
+.show-label{
+	color: white;
+font-size: 16px;
+margin-right: 40px;
+}
+#show-filter{
+border: 0px none;
+padding-left: 10px;
+height: 30px;
+margin-left:10px;
+margin-top: 7px;
+-webkit-appearance: none;
+background-color: white;
+width: 130px;
+padding-top: 0px;
+
+
+}
+.float_left_list{
+	width: 70%;
+float: left;
+}
+.float_right_list{
+	width:30%;
+	float:left;
+}
+.titleEvent{
+	padding-left: 20px;
+font-size: 19px;
+margin-bottom: 20px;
+padding-right: 20px;
+}
+.descEvent{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.categoryEvent{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.dateEvent{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.btnEvent{
+	background-color: #3498db;
+width: 105%;
+height: 50px;
+padding: 1px;
+color: white;
+font-size: 10px;
+margin-top: 25px;
+}
+.btn-socialHotel{
+background-color: #3498db;
+color:white;
+}
+.a-chat{
+	text-decoration: none;
+}
+.a-chat ion-item{
+	padding-left: 20px;
+	font-size: 17px;
+}
+#titleChatRoom{
+
+text-align: center;
+color: #3498db;
+margin-top: 15px;
+font-size: 29px;
+/* margin-bottom: 15px; */
+line-height: 29px;
+padding: 0px;
+margin-bottom: 0px;
+
+}
+#chat-sendButton{
+border-radius: 0px;
+height:40px;
+border: none;
+margin: 0px;
+width: 20%;
+color: white;
+background-color: #3498db;
+padding: 0px;
+font-size: 15px;
+}
+.scroll-view {
+position: absolute;
+display: block;
+overflow: hidden;
+margin-top: -1px;
+left: 0px;
+right: 0px;
+bottom: 60px;
+top:0px;
+}
+#sendBox{
+	position: absolute;
+left: 0px;
+bottom: 0px;
+right: 0px;
+}
+#message-text{
+	font-size: 17px;
+}
+#message-date{
+	position: absolute;
+font-size: 10px;
+right: 6px;
+color:black !important;
+}
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
+#message-name{
+
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    font-size: 13px;
+
+}
+.chat-scroll{
+	top:50px !important;
+	bottom:40px !important;
+}
+button.button.button-icon.icon.ion-ios7-gear-outline {
+color: white;
+}
+.title{
+
+}
+.h-dot{
+	max-height: 40px;
+}
+.thumbnailImg{
+min-width: 80px;
+min-height: 80px;
+}
+.item-service{
+	min-height: 60px;
+}
+.item-service img{
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 50px !important;
+	max-width: 50px !important;
+	top: 5px !important;
+left: 30px !important;
+}
+.item-service h2{
+	margin-top: 7px;
+margin-left: -7px;
+}
+#menu-title{
+	margin-left: 10px;
+margin-top: 10px;
+font-size: 20px;
+color: #3498db;
+}
+button.button.button-lang.button-clear {
+border-radius: 95px;
+background-color: #3498db;
+min-width: 40px;
+min-height: 40px;
+margin-left: 10px;
+color: white;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+button.button.button-lang.button-clear.active {
+color: #3498db;
+background-color: white;
+opacity: 1;
+}
+ .button-social{
+ min-width: 40px !important;
+min-height: 40px !important;
+font-size: 25px;
+color: white !important;
+border-radius: 20px;
+background-color: #3498db!important;
+margin-top: 5px;
+margin-left: 10px;
+margin-bottom: 5px;
+ }
+ .separator{
+ 	width: 95%;
+height: 1px;
+background-color: grey;
+margin: auto;
+margin-bottom: -5px;
+margin-top: 10px;
+opacity: 0.6;
+ }
+ .item-avatar h1{
+ 	margin-top: 7px;
+ }
+ .item-avatar img{
+ 	min-height: 50px;
+ 	min-width: 50px;
+ }
+.title-show-in{
+	font-weight: bold;
+	font-size: 20px !important;
+	line-height: 60px !important;
+	height: 50px;
+}
+
+.bar-subheader {
+top: 44px !important;
+display: block;
+border-bottom: 0px;
+}
+.slider-pager .slider-pager-page {
+display: inline-block;
+margin: 0px 3px;
+width: 15px;
+color: #FFF !important;
+text-decoration: none;
+opacity: 0.3 !important;
+}
+span.slider-pager-page.active {
+opacity: 1 !important;
+}
+.title-survey{
+	text-align: center;
+	font-size: 23px;
+	color:#3498db;
+}
+h1.title-survey{
+	margin-top: 20px;
+
+}
+div#leyendText{
+margin-top: 15px;
+color: white;
+background-color: #3498db;
+font-size: 16px;
+line-height: 19px;
+padding: 6px;
+text-align: center;
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+}
+.box-booking h1{
+	font-size: 25px;
+}
+.box-booking{
+	min-height: 125px;
+
+}
+.item-boox-booking{
+width: 90%;
+margin: auto;
+}
+.contact .scroll{
+	height: 100%;
+}
+.map-scroll .scroll{
+height: 100%;
+position: relative;
+ }
+ .card h1{
+ 	font-size:	20px;
+ }
+ .icon-menu {
+font-size: 19px;
+margin-right: 10px;
+}
+.titleLang{
+	font-size: 18px;
+}
+.button-eng{
+	font-size: 16px;
+}
+.sliderImage {
+height: 100%;
+width: 100%;
+position: absolute;
+background-color: black;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+}
+.toggle.toggle-calm input:checked + .track {
+border-color: #3498db !important;
+background-color: #3498db !important;
+}
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+
+  -webkit-animation: rotate 2.0s infinite linear;
+  animation: rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
