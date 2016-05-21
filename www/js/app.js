@@ -92,7 +92,9 @@ var lector = angular.module('starter', ['ionic','ngCordova', 'starter.controller
 
 lector.controller("ExampleController", function($scope, $cordovaBarcodeScanner, $http, $ionicPopup) {
     $scope.scanBarcode = function() {
+      alert("hola");
         $cordovaBarcodeScanner.scan().then(function(imageData) {
+          alert("holasss");
             var code = imageData.text;
             var api_key = "a3240ae77dcb1308e094e24c16698d96";
 
@@ -126,7 +128,7 @@ lector.controller("ExampleController", function($scope, $cordovaBarcodeScanner, 
             });
 
         }, function(error) {
-
+            alert("error");
         });
 
     };
