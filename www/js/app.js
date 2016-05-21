@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-var lector = angular.module('starter', ['ionic','ngCordova', 'starter.controllers'])
+var App = angular.module('starter', ['ionic','ngCordova', 'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -90,7 +90,28 @@ var lector = angular.module('starter', ['ionic','ngCordova', 'starter.controller
   $urlRouterProvider.otherwise('/app/playlists');
 });
 
-lector.controller("ExampleController", function($scope, $cordovaBarcodeScanner, $http, $ionicPopup) {
+App.controller("Social", function($scope, $cordovaSocialSharing) {
+
+    $scope.shareAnywhere = function() {
+      alert("shareAny");
+        $SocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
+    }
+
+    $scope.shareViaTwitter = function(message, image, link) {
+      alert("share");
+        $cordovaSocialSharing.canShareVia("twitter", message, image, link).then(function(result) {
+          alert("social");
+            $cordovaSocialSharing.shareViaTwitter(message, image, link);
+        }, function(error) {
+            alert("Cannot share on Twitter");
+        });
+    }
+
+});
+
+
+
+App.controller("ExampleController", function($scope, $cordovaBarcodeScanner, $http, $ionicPopup) {
     $scope.scanBarcode = function() {
       alert("hola");
         $cordovaBarcodeScanner.scan().then(function(imageData) {

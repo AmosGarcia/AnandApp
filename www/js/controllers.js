@@ -8,15 +8,6 @@ angular.module('starter.controllers', ['ngCordova'])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-  $scope.facebook=function(){
-  window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){PopUpService.simpleAlert("La aplicación de Facebook no está disponible","No se encuentra");});
-  };
-  $scope.twitter=function(){
-  window.plugins.socialsharing.shareViaTwitter('Message and link via Twitter', null /* img */, 'http://www.x-services.nl');
-  };
-  $scope.whatsapp=function(){
-  window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){PopUpService.simpleAlert("La aplicación de WhatsApp no está disponible","No se encuentra")});
-  };
 })
 
 .controller('HomeCtrl', function($scope, $stateParams) {
