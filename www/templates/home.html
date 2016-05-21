@@ -1,5 +1,5 @@
 <ion-view view-title="Home">
-  <ion-content>
+  <ion-content ng-controller="ExampleController">
     <img class=''  style='width:100%' src="img/logo.jpg">
      <div class="card">
    <div class="item item-text-wrap">
@@ -11,10 +11,6 @@
    </div>
  </div>
 
-<button class="button" ng-controller="Social" ng-click="shareViaTwitter('some message', null, 'https://www.thepolyglotdeveloper.com')">Share on Twitter</button>
-<button class="button" ng-controller="Social" ng-click="shareAnywhere()">Share on Twitter</button>
-
-
   <div class="list card">
   <div class="item item-avatar">
     <img src="img/logo.png">
@@ -25,6 +21,9 @@
     <img class="full-image" src="img/portada.png">
     <p>
       En Vestidos ananda ¡No se te escapará ni un detalle!
+    </p>
+    <p class="subdued">
+      <i class="ion-android-share-alt" onclick="window.plugins.socialsharing.share('Modas AnandA. Los accesorios más bonitos', null, 'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/13178605_1759775517569312_8579077749848336437_n.png?oh=72d896df4bb3a1601263bcbaad34306c&oe=579E1BC6', null)"> Compartir</i>
     </p>
   </div>
 </div>
@@ -40,6 +39,9 @@
 <img class="full-image" src="img/home3.jpg">
 <p>
   Porque para todos los gustos, somos tu tienda en vestidos de novia y cóctel. ¿Vienes a conocernos?
+</p>
+<p class="subdued">
+  <i class="ion-android-share-alt" onclick="window.plugins.socialsharing.share('Modas AnandA. Los accesorios más bonitos', null, 'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/13178605_1759775517569312_8579077749848336437_n.png?oh=72d896df4bb3a1601263bcbaad34306c&oe=579E1BC6', null)"> Compartir</i>
 </p>
 </div>
 
@@ -57,6 +59,9 @@
 <img class="full-image" src="img/home2.jpg">
 <p>
   Elegancia para todos los bolsillos
+</p>
+<p class="subdued">
+  <i class="ion-android-share-alt" onclick="window.plugins.socialsharing.share('Modas AnandA. Los accesorios más bonitos', null, 'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/13178605_1759775517569312_8579077749848336437_n.png?oh=72d896df4bb3a1601263bcbaad34306c&oe=579E1BC6', null)"> Compartir</i>
 </p>
 </div>
 
