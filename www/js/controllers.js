@@ -14,53 +14,37 @@ angular.module('starter.controllers', ['ionic','ngCordova'])
 })
 
 
-.controller("ScannerCtrl", function($scope, $cordovaBarcodeScanner) {
+.controller("ScannerCtrl", function($scope, $cordovaBarcodeScanner,$cordovaInAppBrowser) {
     $scope.scanBarcode = function() {
-      var code = 'https://www.google.es/';
-      // var iframe=document.getElementsByClassName('framesssScanner');
-      // $("#framesssScanner").attr("src", code);
-      // $scope.srcFrame = code;
-      // // var iframe = document.getElementById('iframeCode');
-      // $('#framesssScanner').attr('src', code);
-      // iframe.src=code;
-      window.open(code, '_top', 'location=yes');
-      // window.location.replace(code);
-      // window.location="#/app/contact";
-        // $cordovaBarcodeScanner.scan().then (function(imageData) {
-        //   alert(imageData.text);
-        //     var code = imageData.text;
-        //     var iframe = document.getElementById("iframeCode");
-        //     iframe.src=code;
-        //     window.location="#/app/contact";
-        //
-        //
-        //
-        // }, function(error) {
-        //       alert("error");
-        // });
+         $cordovaBarcodeScanner.scan().then (function(imageData) {
+             var code = imageData.text;
+             window.open(code, '_self', 'location=no');
+         }, function(error) {
+               alert("Se ha producido algún error");
+         });
 
     };
 
 
-    $scope.top = function() {
+    /*$scope.top = function() {
       var code = 'https://www.google.es/';
-      window.open(code, '_top', 'location=yes');
+      window.open(code, '_system');
 
     };
     $scope.self = function() {
       var code = 'https://www.google.es/';
-      window.open(code, '_self', 'location=yes');
+      window.open(code, '_blank');
 
     };
     $scope.blank = function() {
       var code = 'https://www.google.es/';
-      window.open(code, '_blank', 'location=yes');
+      window.open(code, '_blank', 'location=no');
 
     };
     $scope.framename = function() {
       var code = 'https://www.google.es/';
-      window.open(code, 'framename', 'location=yes');
       window.location="#/app/contact";
+      window.open(code, '_self', 'location=no');
 
-    };
+    };*/
 });
