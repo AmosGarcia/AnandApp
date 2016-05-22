@@ -91,56 +91,7 @@ var social = angular.module('starter', ['ionic','ngCordova', 'starter.controller
 });
 
 social.controller("ExampleController", function($scope, $cordovaSocialSharing){
-
  $scope.shareAnywhere = function() {
         $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "https://www.thepolyglotdeveloper.com");
     }
-
 });
-
-
-
-/*App.controller("ExampleController", function($scope, $cordovaBarcodeScanner, $http, $ionicPopup) {
-    $scope.scanBarcode = function() {
-      alert("hola");
-        $cordovaBarcodeScanner.scan().then(function(imageData) {
-          alert("holasss");
-            var code = imageData.text;
-            var api_key = "a3240ae77dcb1308e094e24c16698d96";
-
-            var req =
-            {
-                method: 'GET',
-                url: "http://paselibre.info/api/v1/tickets/validar?api_key=" + api_key + "&code=" + code
-            }
-
-            $http(req).
-            success(function(data, status, headers, config)
-            {
-                if (data.status == "success") {
-                    var alertPopup = $ionicPopup.alert({
-                        title: 'Pase Libre',
-                        template: "Ticket válido:" + "<br>Evento: " + data.data.event + "<br>Tipo: " + data.data.description + "<br>Cantidad: " + data.data.quantity,
-                        okText: "Aceptar"
-                    }).then();
-
-                } else {
-                    var alertPopup = $ionicPopup.alert({
-                        title: 'Pase Libre',
-                        template: "Error: " + data.message,
-                        okText: "Aceptar"
-                    }).then();
-                }
-            }).
-            error(function(data, status, headers, config)
-            {
-
-            });
-
-        }, function(error) {
-            alert("error");
-        });
-
-    };
-
-});*/
