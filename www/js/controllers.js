@@ -16,46 +16,51 @@ angular.module('starter.controllers', ['ionic','ngCordova'])
 
 .controller("ScannerCtrl", function($scope, $cordovaBarcodeScanner) {
     $scope.scanBarcode = function() {
-      alert("hola");
-        $cordovaBarcodeScanner.scan().then (function(imageData) {
-          alert(imageData.text);
-          //
-          //   var code = imageData.text;
-          //   var api_key = "a3240ae77dcb1308e094e24c16698d96";
-          //
-          //   var req =
-          //   {
-          //       method: 'GET',
-          //       url: "http://paselibre.info/api/v1/tickets/validar?api_key=" + api_key + "&code=" + code
-          //   }
-          //
-          //   $http(req).
-          //   success(function(data, status, headers, config)
-          //   {
-          //       if (data.status == "success") {
-          //           var alertPopup = $ionicPopup.alert({
-          //               title: 'Pase Libre',
-          //               template: "Ticket válido:" + "<br>Evento: " + data.data.event + "<br>Tipo: " + data.data.description + "<br>Cantidad: " + data.data.quantity,
-          //               okText: "Aceptar"
-          //           }).then();
-          //
-          //       } else {
-          //           var alertPopup = $ionicPopup.alert({
-          //               title: 'Pase Libre',
-          //               template: "Error: " + data.message,
-          //               okText: "Aceptar"
-          //           }).then();
-          //       }
-          //   }).
-          //   error(function(data, status, headers, config)
-          //   {
-          //
-          //   });
-
-        }, function(error) {
-              alert("error");
-        });
+      var code = 'https://www.google.es/';
+      // var iframe=document.getElementsByClassName('framesssScanner');
+      // $("#framesssScanner").attr("src", code);
+      // $scope.srcFrame = code;
+      // // var iframe = document.getElementById('iframeCode');
+      // $('#framesssScanner').attr('src', code);
+      // iframe.src=code;
+      window.open(code, '_top', 'location=yes');
+      // window.location.replace(code);
+      // window.location="#/app/contact";
+        // $cordovaBarcodeScanner.scan().then (function(imageData) {
+        //   alert(imageData.text);
+        //     var code = imageData.text;
+        //     var iframe = document.getElementById("iframeCode");
+        //     iframe.src=code;
+        //     window.location="#/app/contact";
+        //
+        //
+        //
+        // }, function(error) {
+        //       alert("error");
+        // });
 
     };
 
+
+    $scope.top = function() {
+      var code = 'https://www.google.es/';
+      window.open(code, '_top', 'location=yes');
+
+    };
+    $scope.self = function() {
+      var code = 'https://www.google.es/';
+      window.open(code, '_self', 'location=yes');
+
+    };
+    $scope.blank = function() {
+      var code = 'https://www.google.es/';
+      window.open(code, '_blank', 'location=yes');
+
+    };
+    $scope.framename = function() {
+      var code = 'https://www.google.es/';
+      window.open(code, 'framename', 'location=yes');
+      window.location="#/app/contact";
+
+    };
 });
