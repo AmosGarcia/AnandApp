@@ -59,11 +59,11 @@ var social = angular.module('starter', ['ionic','ngCordova', 'starter.controller
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.qr', {
+      url: '/qr',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/qr.html'
         }
       }
     })
