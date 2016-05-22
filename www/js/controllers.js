@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ngCordova'])
+angular.module('starter.controllers', ['ionic','ngCordova'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -14,7 +14,7 @@ angular.module('starter.controllers', ['ngCordova'])
 })
 
 
-.controller("ScannerCtrl", function($scope, $cordovaBarcodeScanner, $http, $ionicPopup) {
+.controller("ScannerCtrl", function($scope, $cordovaBarcodeScanner) {
     $scope.scanBarcode = function() {
       alert("hola");
         $cordovaBarcodeScanner.scan().then (function(imageData) {
